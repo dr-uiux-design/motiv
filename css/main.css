@@ -2159,6 +2159,12 @@ strong {
     height: 20px;
   }
 }
+@media (max-width: 480px) {
+  .contacts .btn-zayavka {
+    width: 100%;
+    height: 56px;
+  }
+}
 @media (max-width: 375px) {
   .section__title {
     margin-bottom: 24px;
