@@ -1,0 +1,18 @@
+.webp .faq {
+  width: 100%;
+  background: url("../img/faq-bg.webp") no-repeat center;
+  background-size: cover;
+}
+
+.no-webp .faq {
+  width: 100%;
+  background: url("../img/faq-bg.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.faq {
+  &__title {
+    @extend .partners__title;
+    color: #fff;
+  }
+}

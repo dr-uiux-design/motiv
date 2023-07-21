@@ -1,0 +1,54 @@
+#btnScrollTop {
+  cursor: pointer;
+  display: inline-block;
+  width: 56px;
+  height: 56px;
+  color: #fff;
+  background-color: var(--dark-color);
+  border: 1px solid rgba(#fff, 0.08);
+  border-radius: 50%;
+  position: fixed;
+  bottom: 80px;
+  right: -100%;
+  z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: all 0.3s ease-in;
+
+  &.show {
+    right: 32px;
+    opacity: 0.8;
+    visibility: visible;
+    pointer-events: all;
+
+    &:hover {
+      opacity: 1;
+      transform: scale(1.098);
+    }
+  }
+
+  // Стрелка
+  &::before {
+    content: "";
+    flex-shrink: 0;
+    display: inline-block;
+    width: 13px;
+    height: 16px;
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTgiIHZpZXdCb3g9IjAgMCAxNCAxOCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cGF0aCBpZD0iYTg0OTMxOGIiIGQ9Ik0wLjk5OTk2OSAxNS4zNzAxSDEzVjE3LjM3MDFIMC45OTk5NjlWMTUuMzcwMVpNNi45OTk5NyAwLjk1NjExNkwwLjI5Mjk2OSA3LjY2MzEyTDEuNzA2OTcgOS4wNzcxMkw1Ljk5OTk3IDQuNzg0MTJWMTMuMzcwMUg3Ljk5OTk3VjQuNzg0MTJMMTIuMjkzIDkuMDc3MTJMMTMuNzA3IDcuNjYzMTJMNi45OTk5NyAwLjk1NjExNloiIGZpbGw9IiNCMEQ1NEUiPjwvcGF0aD4KPC9zdmc+");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  @media (max-width: 599px) {
+    width: 40px;
+    height: 40px;
+    right: 16px;
+    bottom: 16px;
+  }
+}

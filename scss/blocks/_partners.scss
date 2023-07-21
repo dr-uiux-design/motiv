@@ -1,0 +1,146 @@
+.partners {
+  &__title {
+    margin-bottom: clamp(1.5rem, 0.591rem + 4.55vw, 4rem);
+  }
+
+  &__logos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+
+    .partner-logo {
+      display: block;
+      height: 35px;
+      opacity: 0.3;
+    }
+  }
+
+  &__all {
+    margin-top: 32px;
+  }
+
+  .all-partners {
+    height: 0;
+    overflow: hidden;
+    padding-top: 0;
+    opacity: 0;
+    transition: all 0.3s ease-out;
+
+    &.visible {
+      height: auto;
+      padding-top: 32px;
+      opacity: 1;
+      transition: all 0.3s ease-out;
+    }
+  }
+
+  .more-wrap {
+    display: flex;
+    justify-content: center;
+  }
+
+  .more-partners {
+    margin-top: 48px;
+  }
+}
+
+.more-partners {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-color);
+  border: 1px solid var(--line-color);
+  border-radius: 8px;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 12px 24px;
+  text-align: center;
+  gap: 8px;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    border-color: var(--dark-color);
+  }
+
+  .ic-arrow {
+    transition: transform 0.3s ease-in-out;
+
+    &.active {
+      transform: rotate(180deg);
+    }
+  }
+
+  @media (max-width: 1024px) {
+    border-color: var(--dark-color);
+    &:hover {
+      border-color: var(--dark-color);
+    }
+  }
+}
+
+.ic-arrow {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: url("../img/icons/ic-arrow_down.svg") no-repeat;
+  background-size: cover;
+}
+
+.all-partners {
+  &__list {
+    font-size: 16px;
+    line-height: 1.7;
+    text-align: center;
+    width: 100%;
+    background: var(--bg-gray);
+    border-radius: 16px;
+    padding: 16px 24px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .partners__title,
+  .faq__title {
+    margin-bottom: 32px;
+  }
+  .partners__logos {
+    gap: 32px;
+  }
+
+  .partners .more-partners {
+    margin-top: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .partners__logos {
+    gap: 24px;
+  }
+  .partners__logos .partner-logo {
+    height: 32px;
+  }
+}
+
+@media (max-width: 600px) {
+  .partners__logos .partner-logo {
+    height: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .all-partners__list {
+    padding: 16px;
+    text-align: left;
+    border-radius: 16px;
+    font-size: 15px;
+    line-height: 1.4;
+  }
+}
+
+@media (max-width: 390px) {
+  .partners__logos .partner-logo {
+    height: 24px;
+  }
+}

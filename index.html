@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Favicon (https://realfavicongenerator.net/) -->
+	<link rel="icon" type="image/svg+xml" href="favicon/favicon.svg">
+	<link rel="icon" type="image/png" href="favicon/favicon.png">
+	<title>Motiv</title>
+
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<!-- CSS -->
+	<link rel="stylesheet" href="./css/main.min.css">
+
+	<!-- JS -->
+	<script defer src="js/modernizr-webp.js"></script>
+	<script defer src="js/main.js"></script>
+	<script defer src="js/form.js"></script>
+</head>
+
+<body class="page__body">
+	<div class="page__wrapper">
+		<button type="button" id="btnScrollTop" title="Наверх"></button>
+		<!-- / #btnScrollTop -->
+
+		<!----------- Header ------------->
+		<header class="header">
+			<div class="container header__container">
+				<a href="./" class="logo">
+					<img class="logo__img" src="img/logo.svg" alt="Motiv">
+				</a>
+
+				<!-- Nav -->
+				<div class="nav-overlay"></div>
+				<nav class="header__nav nav">
+					<ul class="list-reset header__menu menu">
+						<li class="menu__item"><a href="#how-work" class="menu__link">Как работает</a></li>
+						<li class="menu__item"><a href="#how-start" class="menu__link">Как начать?</a></li>
+						<li class="menu__item"><a href="#benefit" class="menu__link">Выгода</a></li>
+						<li class="menu__item"><a href="#partners" class="menu__link">Партнеры</a></li>
+						<li class="menu__item"><a href="#faq" class="menu__link">FAQ</a></li>
+						<li class="menu__item"><a href="#contacts" class="menu__link">Контакты</a></li>
+					</ul>
+					<div class="nav__overlay"></div>
+				</nav>
+				<!-- / .nav -->
+
+				<div class="header__right">
+					<a href="#" target="blank" class="btn btn-stroke header__login btn-login">
+						<span class="btn-login__text">Личный кабинет</span>
+						<svg class="ui-icon btn-login__icon">
+							<use xlink:href="img/sprite.svg#ic-user"></use>
+						</svg>
+					</a>
+					<!-- / .login -->
+
+					<button type="button" class="header__burger btn-burger" aria-label="Open Menu"><span class="btn-burger__line"></span></button>
+					<!-- / .btn-burger -->
+				</div>
+
+			</div>
+		</header>
+		<!----------- / Header ------------->
+
+		<main class="page__main">
+
+			<!----------- Главный экран ------------->
+			<section class="hero">
+				<div class="container hero__container">
+					<div class="hero__body">
+						<h1 class="hero__title"><span class="text-accent">Н</span>е просто доставим твою музыку на все стриминг-платформы, а сделаем
+							так, что её начнуть слушать!</h1>
+						<div class="hero__btns">
+							<button type="button" class="btn btn-zayavka js-modal-btn" data-modal-open="modal-zayavka">
+								<span class="btn-zayavka__text">Оставить заявку</span>
+								<svg class="ui-icon btn-zayavka__icon">
+									<use xlink:href="img/sprite.svg#ic-arrow_btn"></use>
+								</svg>
+							</button>
+							<div class="hero__social">
+								<a href="#" target="_blank" class="btn-social">
+									<svg class="ui-icon">
+										<use xlink:href="img/sprite.svg#ic-telegram"></use>
+									</svg>
+								</a>
+								<a href="#" target="_blank" class="btn-social">
+									<svg class="ui-icon">
+										<use xlink:href="img/sprite.svg#ic-whatsapp"></use>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="hero__img">
+						<img loading="lazy" src="img/hero-img.svg" width="590" height="568" alt="">
+					</div>
+				</div>
+			</section>
+
+			<!----------- Как это работает? ------------->
+			<section class="section how-work" id="how-work">
+				<div class="container">
+					<div class="how-work__head">
+						<h2 class="section__title how-work__title"><span class="text-accent">К</span>ак это работает?</h2>
+						<p class="how-work__subtitle">Простая схема начать продвигать себя и свои треки!</p>
+					</div>
+
+					<ul class="list-reset how-work__steps">
+						<li class="step-item">
+							<img class="step-item__num" loading="lazy" src="img/step-num_1.jpg" width="110" height="64" alt="">
+							<img class="step-item__icon" loading="lazy" src="img/icons/step-icon_1.svg" width="64" height="" alt="64">
+							<div class="step-item__body">
+								<h3 class="step-item__body-title">Загрузи свою музыку</h3>
+								<p class="step-item__body-descr">и начни сразу получать выплаты за прослушивание.</p>
+							</div>
+						</li>
+
+						<li class="step-item">
+							<img class="step-item__num" loading="lazy" src="img/step-num_2.jpg" width="110" height="64" alt="01">
+							<img class="step-item__icon" loading="lazy" src="img/icons/step-icon_2.svg" width="64" height="" alt="64">
+							<div class="step-item__body">
+								<h3 class="step-item__body-title">Поставь лучшие треки в продвижение</h3>
+								<p class="step-item__body-descr">Тысячи исполнителей прослушают их, продвигая тебя в рейтинге, в замен тебе необходимо
+									оценить творчество других артистов.</p>
+							</div>
+						</li>
+
+						<li class="step-item">
+							<img class="step-item__num" loading="lazy" src="img/step-num_3.jpg" width="110" height="64" alt="">
+							<img class="step-item__icon" loading="lazy" src="img/icons/step-icon_3.svg" width="64" height="" alt="64">
+							<div class="step-item__body">
+								<h3 class="step-item__body-title">Войди в Топ во внутреннем рейтине и получи наставника,</h3>
+								<p class="step-item__body-descr">а также pro-инструменты за счет платформы: таргетированная реклама, создание видео
+									контента, прокачка личного аккаунта.</p>
+							</div>
+						</li>
+					</ul>
+
+				</div>
+			</section>
+
+			<!----------- Как начать? ------------->
+			<section class="section how-start" id="how-start">
+				<div class="container how-start__container">
+					<div class="how-start__left">
+						<h2 class="section__title how-start__title"><span class="text-accent">С</span> чего начать?</h2>
+						<p class="how-start__descr">Оставить заяку на доступ в личный кабинет. <br class="hidden-mob">
+							Наш менеджер свяжется с вами, проконсультирует по «первым шагам» и ответит на интересующие вопросы.</p>
+						<button type="button" class="btn btn-zayavka js-modal-btn" data-modal-open="modal-zayavka">
+							<span>Оставить заявку</span>
+							<svg class="ui-icon">
+								<use xlink:href="img/sprite.svg#ic-arrow_btn"></use>
+							</svg>
+						</button>
+					</div>
+					<div class="how-start__right">
+						<h2 class="section__title how-start__title"><span class="text-accent">К</span>огда старт проекта?</h2>
+						<p class="how-start__descr">Официальный старт проекта состоится <span class="text-accent">01.10.2023.</span> <br>
+							Чтобы быть в курсе последних новостей платформы, подпишись на наш официальный телеграм-канал.</p>
+						<a href="#" target="_blank" class="btn subscribe-telegram">
+							Подписаться <span class="hidden-mob">на Telegram</span>
+							<svg class="ui-icon">
+								<use xlink:href="img/sprite.svg#ic-telegram"></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<!----------- Что еще получу? ------------->
+			<section class="section benefit" id="benefit">
+				<div class="container benefit__container">
+					<div class="benefit__content">
+						<h2 class="section__title benefit__title"><span class="text-accent">Ч</span>то еще получу?</h2>
+
+						<div class="advantages-wrap">
+							<div class="advantages">
+								<h3 class="advantages__title">Простой и удобный интерфейс:</h3>
+								<ul class="advantages__list">
+									<li>подробная статистика;</li>
+									<li>финансовые отчёты;</li>
+									<li>вывод выплат на карту.</li>
+								</ul>
+							</div>
+							<div class="advantages">
+								<h3 class="advantages__title">Техническая поддержка:</h3>
+								<ul class="advantages__list">
+									<li>24/7 - ускорит процес обработки заявки;</li>
+									<li>поменяет дату релиза;</li>
+									<li>заменит треки, не отзывая с площадок.</li>
+								</ul>
+							</div>
+						</div>
+
+					</div>
+					<div class="benefit__img">
+						<img loading="lazy" src="img/interface-preview.png" width="765" height="444" alt="">
+					</div>
+				</div>
+			</section>
+
+			<!----------- Наши партнеры ------------->
+			<section class="section partners" id="partners">
+				<div class="container">
+					<h2 class="section__title partners__title text-center"><span class="text-accent">Н</span>аши партнеры</h2>
+
+					<div class="partners__logos">
+						<img class="partner-logo" loading="lazy" src="img/partners/apple-music.png" height="35" alt="Apple Music">
+						<img class="partner-logo" loading="lazy" src="img/partners/spotify.png" height="35" alt="Spotify">
+						<img class="partner-logo" loading="lazy" src="img/partners/deezer.png" height="35" alt="Deezer">
+						<img class="partner-logo" loading="lazy" src="img/partners/tiktok.png" height="35" alt="TikTok">
+						<img class="partner-logo" loading="lazy" src="img/partners/sound-cloud.png" height="35" alt="SoundCloud">
+						<img class="partner-logo" loading="lazy" src="img/partners/youtube-music.png" height="35" alt="Yotube Music">
+						<img class="partner-logo" loading="lazy" src="img/partners/vk-music.png" height="35" alt="VK Музыка">
+						<img class="partner-logo" loading="lazy" src="img/partners/ya-music.png" height="35" alt="Яндекс Музыка">
+						<img class="partner-logo" loading="lazy" src="img/partners/amazon-music.png" height="35" alt="Amazon Music">
+						<img class="partner-logo" loading="lazy" src="img/partners/zvooq.png" height="35" alt="Zvooq">
+						<!-- <img class="partner-logo" loading="lazy" src="img/partners/sber-zvook.png" height="35" alt="Сбер Звук"> -->
+					</div>
+
+					<div class="all-partners">
+						<p class="all-partners__list">Apple Music, Spotify, YouTube Music, VK Музыка, Яндекс.Музыка, Звук, TikTok, Deezer,
+							Facebook/Instagram, SoundCloud, Tidal, Beatport, 7Digital, Amazon, Ami Entertainment, Anghami, Anghami Video, Apple Karaoke,
+							Apple Video, AudibleMagic, AWA, Bmat,
+							Boomplay, Boomplay Video, Digital Stores, Dreamus Company (FLO), Facebook Fingerprinting, Facebook Video Fingerprinting,
+							Feed.FM, Adaptr, fizy, Gracenote, Hungama, Hungama Video, iHeartRadio, iMusica, iTunes Music Store, Jaxsta Music, JioSaavn,
+							Joox,
+							KkBox, Kuack Media, Lickd, LINE Music, LyricFind, MePlaylist, Microsoft (Xbox, Zune), Mixcloud, MixUpload, Music in ‘Ayoba’,
+							Music
+							Worx, MusixMatch, Muska, Napster, NetEase Cloud Music, Nuuday A/S, Pandora, Peloton, Phononet, Pretzel Rocks, Qobuz, Resso,
+							Roxi
+							Music, Videos, Shazam, Tencent, TIM Music, TouchTunes / PlayNetwork, Trebel Music, Triller, Xite, Yandex.Video, YouTube
+							Content ID,
+							YouTube, Vide</p>
+					</div>
+
+					<div class="more-wrap">
+						<button type="button" class="more-partners">
+							<span class="more-partners__text">Показать всех </span>
+							<i class="ic-arrow"></i>
+						</button>
+					</div>
+				</div>
+			</section>
+
+			<!----------- FAQ ------------->
+			<section class="section faq" id="faq">
+				<div class="container">
+					<h2 class="section__title faq__title text-center"><span class="text-accent">Ч</span>асто задаваемые вопросы</h2>
+
+					<div class="faq__accordion accordion">
+						<div class="accordion__item">
+							<div class="accordion__item-head">
+								<div class="accordion__item-title">Какие права передает артист?</div>
+								<i class="ic-plus"></i>
+							</div>
+							<div class="accordion__item-content">
+								<p>В соответствии с лицензионным договором, артист передает нам только права на дистрибуцию и сбор вознаграждения. Авторские
+									права в полной мере исполнитель сохраняет за собой.</p>
+							</div>
+						</div>
+						<div class="accordion__item">
+							<div class="accordion__item-head">
+								<div class="accordion__item-title">Как быстро происходит модерация и за сколько дней нужно загружать релизы?</div>
+								<i class="ic-plus"></i>
+							</div>
+							<div class="accordion__item-content">
+								<p>Модерация в среднем занимает до 2-х рабочих суток. Мы предлагаем два варианта выпуска релиза: быстрый, без указания
+									конкретной
+									даты, в таком случае трек выйдет как только пройдет модерацию, и более точный, в случае с которым можно выбрать конкретную
+									дату,
+									которая не может быть раньше чем через 7 дней.</p>
+							</div>
+						</div>
+						<div class="accordion__item">
+							<div class="accordion__item-head">
+								<div class="accordion__item-title">Сколько стоят услуги сервиса?</div>
+								<i class="ic-plus"></i>
+							</div>
+							<div class="accordion__item-content">
+								<p>Все наши услуги предоставляются бесплатно, взамен мы берем комиссию с дохода ваших треков, которая составляет 15%.</p>
+							</div>
+						</div>
+						<div class="accordion__item">
+							<div class="accordion__item-head">
+								<div class="accordion__item-title">Как узнать, сколько я заработал?</div>
+								<i class="ic-plus"></i>
+							</div>
+							<div class="accordion__item-content">
+								<p>Вся финансовая информация в полной мере отображается в вашем личном кабинете, включая финансовые отчеты, аналитику и
+									выплаты.</p>
+							</div>
+						</div>
+						<div class="accordion__item">
+							<div class="accordion__item-head">
+								<div class="accordion__item-title">Как оформить выплату?</div>
+								<i class="ic-plus"></i>
+							</div>
+							<div class="accordion__item-content">
+								<p>Очень просто! В своем личном кабинете, после обновления баланса, будет достаточно просто выбрать нужный платежный метод и
+									ввести свои реквизиты. Платеж будет оформлен в течение 7 дней с момента заявки.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!----------- Контакты ------------->
+			<section class="section contacts" id="contacts">
+				<div class="container contacts__container">
+					<div class="contacts__left">
+						<h2 class="section__title contacts__title"><span class="text-accent">К</span>онтакты</h2>
+						<!-- contacts__list -->
+						<ul class="list-reset contacts__list">
+							<li class="contact-item">
+								<div class="contact-item__icon">
+									<svg class="ui-icon">
+										<use xlink:href="img/sprite.svg#ic-loc"></use>
+									</svg>
+								</div>
+								<div class="contact-item__info">
+									<div class="contact-item__label">Адрес:</div>
+									<p class="contact-item__text">г. Санкт-Петербург, <br class="hidden-mob"> ул. Название улицы, офис 32</p>
+								</div>
+							</li>
+							<li class="contact-item">
+								<div class="contact-item__icon">
+									<svg class="ui-icon">
+										<use xlink:href="img/sprite.svg#ic-phone"></use>
+									</svg>
+								</div>
+								<div class="contact-item__info">
+									<div class="contact-item__label">Телефон:</div>
+									<a class="contact-item__link" href="tel:88005677890" target="_blank">8 (800) 567-78-90</a>
+								</div>
+							</li>
+							<li class="contact-item">
+								<div class="contact-item__icon">
+									<svg class="ui-icon">
+										<use xlink:href="img/sprite.svg#ic-email"></use>
+									</svg>
+								</div>
+								<div class="contact-item__info">
+									<div class="contact-item__label">Email адрес:</div>
+									<a href="mailto:support@motiv.ru" class="contact-item__link">support@motiv.ru</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="contacts__right">
+						<h2 class="section__title contacts__title"><span class="text-accent">Т</span>еx. Поддержка</h2>
+						<!-- contacts__list -->
+						<ul class="list-reset contacts__list">
+							<li class="contact-item">
+								<div class="contact-item__icon">
+									<svg class="ui-icon">
+										<use xlink:href="img/sprite.svg#ic-telegram"></use>
+									</svg>
+								</div>
+								<div class="contact-item__info">
+									<div class="contact-item__label">Telegram:</div>
+									<a class="contact-item__link" href="https://t.me/@motiv" target="_blank">@motiv</a>
+								</div>
+							</li>
+							<li class="contact-item">
+								<div class="contact-item__icon">
+									<svg class="ui-icon">
+										<use xlink:href="img/sprite.svg#ic-whatsapp"></use>
+									</svg>
+								</div>
+								<div class="contact-item__info">
+									<div class="contact-item__label">WhatsApp:</div>
+									<a href="https://wa.me/79999999999" target="_blank" class="contact-item__link">motiv@gmal.com</a>
+								</div>
+							</li>
+						</ul>
+
+						<button type="button" class="btn btn-zayavka js-modal-btn" data-modal-open="modal-zayavka">
+							<span class="btn-zayavka__text">Оставить заявку</span>
+							<svg class="ui-icon btn-zayavka__icon">
+								<use xlink:href="img/sprite.svg#ic-arrow_btn"></use>
+							</svg>
+						</button>
+					</div>
+				</div>
+			</section>
+
+		</main>
+		<!-- / .page__main -->
+
+		<!----------- Footer ------------->
+		<footer class="footer">
+			<div class="container footer__container">
+				<p class="footer__text">© Motiv.ru | Все права защищены 2023</p>
+				<a href="./privacy.html" target="_blank" class="footer__link privacy-link">Политика конфиденциальности</a>
+			</div>
+		</footer>
+	</div>
+	<!-- / .page__wrapper -->
+
+	<!----------- Modals ------------->
+
+	<!-- Форма заявки -->
+	<div class="modal modal-form" data-modal="modal-zayavka">
+		<div class="modal__overlay">
+			<div class="modal__content">
+				<div class="modal__close"></div>
+				<div class="modal__header text-center">
+					<h3 class="modal__title"><span class="text-accent">О</span>ставьте заявку</h3>
+					<p class="modal__descr">Укажите свои данные и наш менеджер свяжется с вами, проконсультирует по «первым шагам» и ответит
+						на интересующие вопросы.</p>
+				</div>
+
+				<!-- form -->
+				<form action="" method="POST" class="form form-zayavka">
+					<!-- / .form__header -->
+					<div class="form__body">
+						<!-- hidden -->
+						<input type="hidden" name="project_name" value="Заявка с сайта «Motiv">
+						<input type="hidden" name="admin_email" value="support@motiv.ru">
+						<input type="hidden" name="form_subject" value="Заявка с обратной формы">
+						<!-- hidden -->
+						<div class="input-field">
+							<input type="text" class="input-field__input" placeholder=" " autocomplete="off">
+							<label class="input-field__label">Введите имя</label>
+						</div>
+						<div class="input-field">
+							<input type="text" class="input-field__input input-phone" placeholder=" " autocomplete="off" required>
+							<label class="input-field__label">Номер телефона</label>
+						</div>
+						<button type="submit" class="btn form__btn btn-zayavka">
+							<span class="btn-zayavka__text">Отправить заявку</span>
+							<svg class="ui-icon btn-zayavka__icon">
+								<use xlink:href="img/sprite.svg#ic-arrow_btn"></use>
+							</svg>
+						</button>
+					</div>
+					<!-- .form__footer -->
+					<div class="form__footer">
+						<label class="check form__check" id="">
+							<input class="check__input" type="checkbox" name="param-name">
+							<span class="check__box"></span>
+							<span class="check__label">Нажимая кнопку "Отправить заявку" Вы принимаете условия <a href="./privacy.html"
+									target="_blank">политики
+									конфиденциальнсти</a></span>
+						</label>
+					</div>
+					<!-- / .form__footer -->
+				</form>
+				<!-- / .form -->
+			</div>
+		</div>
+	</div>
+
+	<!-- Спасибо за заявку! -->
+	<div class="modal modal-success" data-modal="modal-success">
+		<div class="modal__overlay">
+			<div class="modal__content">
+				<div class="modal__close success__close"></div>
+				<img src="img/icons/ic-success.svg" width="80" height="80" alt="" class="ic-success">
+				<div class="modal__header text-center">
+					<h3 class="modal__title"><span class="text-accent">С</span>пасибо!</h3>
+					<p class="modal__descr">Наш менеджер свяжется с вами<br class="hidden-mob"> в ближайшее время.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

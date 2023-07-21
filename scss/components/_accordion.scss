@@ -1,0 +1,134 @@
+.accordion {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+
+  &__item {
+    background: rgba(0, 0, 0, 0.12);
+    border-radius: 16px;
+    border: 1px dashed rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(4px);
+    padding: 24px;
+    &:not(:last-child) {
+      margin-bottom: 12px;
+    }
+  }
+
+  &__item-head {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    &:hover .accordion__item-title {
+      color: var(--main-color);
+    }
+  }
+
+  &__item-title {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.4;
+    transition: color 0.3s ease-in-out;
+  }
+
+  &__item-content {
+    height: 0;
+    color: rgba(#fff, 0.8);
+    font-size: 16px;
+    line-height: 1.5;
+    padding-top: 0;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: padding-top 0.3s ease-in-out;
+
+    p {
+      &:not(:last-child) {
+        margin-bottom: 16px;
+      }
+    }
+  }
+
+  .ic-minus {
+    display: none;
+    animation: fade 0.3s ease-in-out;
+  }
+}
+
+// Если открыт аккордион
+.accordion__item.active {
+  border-color: var(--main-color);
+}
+.accordion__item.active .accordion__item-content {
+  height: auto;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+  padding-top: 12px;
+}
+
+.accordion__item.active .ic-plus {
+  transform: rotate(180deg);
+}
+
+.accordion__item.active .ic-minus {
+  display: inline-block;
+}
+
+.accordion__item:not(.active) .ic-plus {
+  display: inline-block;
+}
+
+.ic-plus,
+.ic-minus {
+  flex-shrink: 0;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (max-width: 480px) {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.ic-plus {
+  background-image: url("../img/icons/ic-plus.svg");
+}
+.ic-minus {
+  background-image: url("../img/icons/ic-minus.svg");
+}
+
+@media (max-width: 480px) {
+  .accordion__item {
+    padding: 16px;
+    border-radius: 12px;
+  }
+
+  .accordion__item-title {
+    font-size: 18px;
+  }
+
+  .ic-plus,
+  .ic-minus {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media (max-width: 375px) {
+  .accordion__item-title {
+    font-size: 16px;
+  }
+
+  .accordion__item-content {
+    font-size: 15px;
+  }
+  .accordion__item.active .accordion__item-content {
+    padding-top: 8px;
+  }
+}

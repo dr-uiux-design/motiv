@@ -1,0 +1,10 @@
+.btn-zayavka {
+  &:hover .ui-icon {
+    transform: translateX(2px);
+  }
+
+  .ui-icon {
+    color: var(--main-color);
+    transition: transform 0.2s ease-in-out;
+  }
+}

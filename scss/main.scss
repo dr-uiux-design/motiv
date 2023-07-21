@@ -1,0 +1,31 @@
+@import "./base/03-default";
+
+/* ------------------- COMPONENTS -------------------- */
+// @import "./components/";
+// @import "./components/css-grid";
+@import "./components/btn-top";
+@import "./components/btn";
+@import "./components/btn-burger";
+@import "./components/btn-social";
+@import "./components/btn-zayavka";
+@import "./components/ui-icon";
+@import "./components/accordion";
+@import "./components/form";
+@import "./components/input";
+@import "./components/checkbox";
+@import "./components/modal";
+@import "./components/modal-success";
+
+/* ------------------- BLOCKS -------------------- */
+@import "./blocks/header";
+@import "./blocks/footer";
+@import "./blocks/hero";
+@import "./blocks/how-work";
+@import "./blocks/how-start";
+@import "./blocks/benefit";
+@import "./blocks/partners";
+@import "./blocks/faq";
+@import "./blocks/contacts";
+
+/* ------------------- PAGES -------------------- */
+@import "./pages/privacy";
