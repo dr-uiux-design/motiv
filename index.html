@@ -51,13 +51,23 @@
 				<!-- / .nav -->
 
 				<div class="header__right">
-					<a href="#" target="blank" class="btn btn-stroke header__login btn-login">
+					<!-- login скрыто -->
+					<a style="display: none;" href="#" target="blank" class="btn btn-stroke header__login btn-login hidden">
 						<span class="btn-login__text">Личный кабинет</span>
 						<svg class="ui-icon btn-login__icon">
 							<use xlink:href="img/sprite.svg#ic-user"></use>
 						</svg>
 					</a>
 					<!-- / .login -->
+
+					<!-- Оставить заявку (скрыть или убрать, когда появиться ЛК) -->
+					<button type="button" class="btn btn-stroke header__login btn-login js-modal-btn" data-modal-open="modal-zayavka">
+						<span class="btn-login__text">Личный кабинет</span>
+						<svg class="ui-icon btn-login__icon">
+							<use xlink:href="img/sprite.svg#ic-user"></use>
+						</svg>
+					</button>
+					<!-- / Оставить заявку -->
 
 					<button type="button" class="header__burger btn-burger" aria-label="Open Menu"><span class="btn-burger__line"></span></button>
 					<!-- / .btn-burger -->
@@ -136,8 +146,8 @@
 							<img class="step-item__icon" loading="lazy" src="img/icons/step-icon_3.svg" width="64" height="" alt="64">
 							<div class="step-item__body">
 								<h3 class="step-item__body-title">Войди в Топ во внутреннем рейтине и получи наставника,</h3>
-								<p class="step-item__body-descr">а также pro-инструменты за счет платформы: таргетированная реклама, создание видео
-									контента, прокачка личного аккаунта.</p>
+								<p class="step-item__body-descr">а также pro-инструменты за счет платформы: таргетированная реклама, создание видеоконтента,
+									прокачка личного аккаунта.</p>
 							</div>
 						</li>
 					</ul>
@@ -326,7 +336,7 @@
 								</div>
 								<div class="contact-item__info">
 									<div class="contact-item__label">Адрес:</div>
-									<p class="contact-item__text">г. Санкт-Петербург, <br class="hidden-mob"> ул. Название улицы, офис 32</p>
+									<p class="contact-item__text">г. Иваново, <br class="hidden-mob"> ул. Парижской Коммуны, 3А</p>
 								</div>
 							</li>
 							<li class="contact-item">

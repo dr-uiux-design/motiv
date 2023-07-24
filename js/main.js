@@ -113,11 +113,11 @@ window.addEventListener('scroll', () => {
       const targetTop = target.offsetTop - headerHeight;
       const targetBottom = targetTop + target.offsetHeight;
 
-      if (window.scrollY >= targetTop && window.scrollY < targetBottom) {
-        link.classList.add('active');
-      } else {
-        link.classList.remove('active');
-      }
+      // if (window.scrollY >= targetTop && window.scrollY < targetBottom) {
+      //   link.classList.add('active');
+      // } else {
+      //   link.classList.remove('active');
+      // }
     }
   });
 });
